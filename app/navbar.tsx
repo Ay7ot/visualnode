@@ -41,7 +41,7 @@ export default function Navbar() {
     //                         return (
     //                             <li
     //                                 key={index}
-    //                                 className={`${navState.active ? 'text-black' : 'text-[#7c7c7c]'} text-sm cursor-pointer`}
+    //                                 className={`${navState.active ? 'text-black' : 'text-[#7c7c7c]'} text-sm`}
     //                             >
     //                                 {navState.name}
     //                             </li>
@@ -114,7 +114,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Nav Menu */}
-            <div ref={navMenuRef} className={`md:hidden dynamicHeight absolute top-0 bg-[#333333] ${navbarShown ? 'right-0 w-[250px] blur-0' : 'right-[-250px] w-[0px]'} transition-all ease-linear duration-200 overflow-y-scroll scrollbarHidden`}>
+            <div ref={navMenuRef} className={`md:hidden dynamicHeight absolute top-0 bg-[#121212] ${navbarShown ? 'right-0 w-[250px] blur-0' : 'right-[-250px] w-[0px]'} transition-all ease-linear duration-200 overflow-y-scroll scrollbarHidden z-[99]`}>
                 <div className="flex flex-col gap-5 p-4">
                     <div className="flex items-center gap-2 text-[#7C7C7C]">
                         <i onClick={() => toggleNavbar(false)}><FaTimes /></i>
