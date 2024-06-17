@@ -72,8 +72,67 @@ export default function Navbar() {
                     <i></i>
                 </div>
 
-                <ul className="items-center gap-4 hidden md:flex">
-                    {/* {renderNavItems()} */}
+                <ul className={`items-center gap-4 hidden md:flex`}>
+                    {navigationState.slice(0, 2).map((navState, index) => {
+                        return (
+                            <li
+                                key={index}
+                                className={`${navState.active ? 'text-black' : 'text-[#7c7c7c]'}`}
+                            >
+                                {navState.name}
+                            </li>
+                        )
+                    })}
+                    {width >= 868 && navigationState.slice(2, 3).map((navState, index) => {
+                        return (
+                            <li
+                                key={index}
+                                className={`${navState.active ? 'text-black' : 'text-[#7c7c7c]'}`}
+                            >
+                                {navState.name}
+                            </li>
+                        )
+                    })}
+                    {width >= 932 && navigationState.slice(3, 4).map((navState, index) => {
+                        return (
+                            <li
+                                key={index}
+                                className={`${navState.active ? 'text-black' : 'text-[#7c7c7c]'}`}
+                            >
+                                {navState.name}
+                            </li>
+                        )
+                    })}
+                    {width >= 1092 && navigationState.slice(4, 5).map((navState, index) => {
+                        return (
+                            <li
+                                key={index}
+                                className={`${navState.active ? 'text-black' : 'text-[#7c7c7c]'}`}
+                            >
+                                {navState.name}
+                            </li>
+                        )
+                    })}
+                    {width >= 1263 && navigationState.slice(5, 6).map((navState, index) => {
+                        return (
+                            <li
+                                key={index}
+                                className={`${navState.active ? 'text-black' : 'text-[#7c7c7c]'}`}
+                            >
+                                {navState.name}
+                            </li>
+                        )
+                    })}
+                    {width >= 1270 && navigationState.slice(6, 7).map((navState, index) => {
+                        return (
+                            <li
+                                key={index}
+                                className={`${navState.active ? 'text-black' : 'text-[#7c7c7c]'}`}
+                            >
+                                {navState.name}
+                            </li>
+                        )
+                    })}
                 </ul>
 
                 <div className={`flex items-center gap-3`}>
@@ -114,7 +173,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Nav Menu */}
-            <div ref={navMenuRef} className={`md:hidden dynamicHeight absolute top-0 bg-[#121212] ${navbarShown ? 'right-0 w-[250px] blur-0' : 'right-[-250px] w-[0px]'} transition-all ease-linear duration-200 overflow-y-scroll scrollbarHidden z-[99]`}>
+            <div ref={navMenuRef} className={`md:hidden dynamicHeight absolute top-0 bg-[#333333] ${navbarShown ? 'right-0 w-[250px]' : 'right-[-250px] w-[0px]'} transition-all ease-linear duration-200 overflow-y-scroll scrollbarHidden z-[99]`}>
                 <div className="flex flex-col gap-5 p-4">
                     <div className="flex items-center gap-2 text-[#7C7C7C]">
                         <i onClick={() => toggleNavbar(false)}><FaTimes /></i>

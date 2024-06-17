@@ -13,7 +13,7 @@ export default function Home() {
   const { navbarShown } = useUiStore()
 
   return (
-    <main className={`dynamicMinHeight ${navbarShown && 'blur-sm'} p-4 md:px-[5%] lg:py-[3%] lg:px-[8%] max-w-[1440px] mx-auto`}>
+    <main className={`dynamicMinHeight ${navbarShown ? '' : ''} p-4 md:px-[5%] lg:py-[3%] lg:px-[8%] max-w-[1440px] mx-auto`}>
       <section className="flex flex-col gap-6">
         <h2 className="font-semibold text-[#333333]">Welcome, Ayomide!</h2>
 
