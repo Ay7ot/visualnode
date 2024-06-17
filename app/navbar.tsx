@@ -31,30 +31,6 @@ export default function Navbar() {
         };
     }, [toggleNavbar]);
 
-    // const renderNavItems = () => {
-    //     const breakpoints = [868, 932, 1092, 1263, 1270];
-    //     return (
-    //         <>
-    //             {
-    //                 navigationState.map((navState, index) => {
-    //                     if (index < 2 || width >= breakpoints[index - 2]) {
-    //                         return (
-    //                             <li
-    //                                 key={index}
-    //                                 className={`${navState.active ? 'text-black' : 'text-[#7c7c7c]'} text-sm`}
-    //                             >
-    //                                 {navState.name}
-    //                             </li>
-    //                         );
-    //                     }
-    //                     return null;
-    //                 })
-    //             }
-    //             <li className="text-sm text-[#7c7c7c] cursor-pointer">More</li>
-    //         </>
-    //     )
-    // };
-
     return (
         <nav className={`p-4 border-b-[1px] sticky top-0 bg-white`}>
 
@@ -160,7 +136,7 @@ export default function Navbar() {
                         <TbSearch />
                     </i>
                     <div className="flex items-center gap-1 cursor-pointer">
-                        <p className="bg-green-500 text-white text-sm py-1 px-2">AI</p>
+                        <p className="bg-green-500 text-white text-sm py-1 px-2">EF</p>
                         <i className="text-[12px] text-[#7C7C7C]"><FaChevronDown /></i>
                     </div>
                     <i

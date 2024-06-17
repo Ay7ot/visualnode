@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className={`dynamicMinHeight ${navbarShown ? '' : ''} p-4 md:px-[5%] lg:py-[3%] lg:px-[8%] max-w-[1440px] mx-auto`}>
       <section className="flex flex-col gap-6">
-        <h2 className="font-semibold text-[#333333]">Welcome, Ayomide!</h2>
+        <h2 className="font-semibold text-[#333333]">Welcome, Efrem!</h2>
 
         <div className="flex flex-col gap-6 md:flex-row">
           <div className="border-[#cccccc] md:flex-1 flex items-center border-[1px] text-[#333333]">
